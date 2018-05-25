@@ -1,0 +1,44 @@
+@import "../../../styles.scss";
+
+.top {
+ display: flex;
+ padding: 2% 16%;
+ justify-content: space-between;
+ align-items: center;
+ background-color: #f7f7f7;
+}
+
+.top__desc {
+
+}
+
+.top__desc__h1 {
+ font-family: $roboto;
+ font-size: 24px;
+ font-weight: 500;
+}
+
+.border {
+ width: 100%;
+}
+
+.border__top {
+ height: 12px;
+ background-color: #65F2FF;
+}
+
+.border__bottom {
+ height: 4px;
+ background-color: #0BEAFF;
+}
+
+.bottom {
+ padding: 1% 16%;
+ background-color: #f7f7f7;
+}
+
+.bottom__h2 {
+ font-family: $roboto;
+ font-size: 20px;
+ font-weight: 300;
+}

@@ -1,0 +1,43 @@
+<div *ngFor="let device of devices" class="item">
+  <div class="item__name">
+    {{ device.name }}
+  </div>
+
+  <div class="item__data">
+    <div class="item__cpu">
+      <span class="item__data--desc">
+        CPU
+      </span>
+      <span class="item__data--desc green">
+        {{device.status[1] | status}}
+      </span>
+    </div>
+
+    <div class="item__mem">
+      <span class="item__data--desc">
+        MEM
+      </span>
+      <span class="item__data--desc green">
+        {{device.status[2] | status}}
+      </span>
+    </div>
+
+    <div class="item__disk">
+      <span class="item__data--desc">
+        DISK
+      </span>
+      <span class="item__data--desc green">
+        {{device.status[0] | status}}
+      </span>
+    </div>
+  </div>
+
+  <div class="item__data-2">
+    <span class="item__desc">
+      ? / ?
+    </span>
+    <span class="time">
+      {{device.uptime_seconds | amDuration:'seconds'}}
+    </span>
+  </div>
+</div>

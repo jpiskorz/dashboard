@@ -1,0 +1,52 @@
+@import "../../../styles.scss";
+
+.green {
+  color: #81CE77;
+  font-weight: 500;
+}
+
+.item {
+  border: 1px solid rgba(0, 0, 0, .16);
+  border-radius: 16px;
+  width: 180px;
+  margin: 0 32px 32px 0;
+  padding: 16px;
+  display: inline-flex;
+  flex-wrap: wrap;
+}
+
+.item__data {
+  width: 100%;
+  display: inline-flex;
+  justify-content: space-between;
+  font-family: $roboto;
+  margin-bottom: 16px;
+}
+
+.item__data-2 {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.item__name {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+.item__cpu {
+  display: flex;
+  flex-direction: column;
+}
+
+.item__mem {
+  display: flex;
+  flex-direction: column;
+}
+
+.item__disk {
+  display: flex;
+  flex-direction: column;
+}
